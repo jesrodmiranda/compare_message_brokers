@@ -1,3 +1,4 @@
 rabbitmq/data
 rabbitmq/logs
 activemq/activemq/apache-activemq-5.15.11-bin.tar.gz
+venv/
