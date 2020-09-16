@@ -12,3 +12,8 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
+    networks:
+      - perf-test
+networks:
+  perf-test:
+    external: true
