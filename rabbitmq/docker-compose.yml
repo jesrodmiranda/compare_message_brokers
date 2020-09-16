@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbit-muy-test
+    volumes:
+      - ./etc/definitions.json:/etc/rabbitmq/definitions.json
+      - ./etc/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+      - ./data:/var/lib/rabbitmq/mnesia/rabbit@my-rabbit
+      - ./logs:/var/log/rabbitmq/log
+    ports:
+      - 5672:5672
+      - 15672:15672

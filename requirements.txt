@@ -1,0 +1,5 @@
+# Client to RabbitMQ
+pika
+
+# Client to ActiveMQ
+stomp.py
