@@ -19,6 +19,8 @@ RUN ln -s $ACTIVEMQ_WORKDIR/apache-activemq-$ACTIVEMQ_VERSION $ACTIVEMQ_WORKDIR/
 # change work dir
 WORKDIR $ACTIVEMQ_WORKDIR/activemq
 
+COPY activemq/activemq.xml $ACTIVEMQ_WORKDIR/activemq/conf
+
 # EXPOSE PORTS
 # ACTIVEMQ UI
 EXPOSE 8161
